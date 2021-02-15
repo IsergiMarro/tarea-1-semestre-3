@@ -17,6 +17,6 @@ main(){
 	cin>>telefono;
 	// instanciar
 	Cliente obj = Cliente(nombres,apellidos,direccion,telefono,nit);
-	obj.mostrar();
+	obj.mostrar();	
 	
 }
