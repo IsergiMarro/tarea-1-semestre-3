@@ -1,19 +1,20 @@
+//Cliente
+#include "Persona.cpp"
 #include <iostream>
 using namespace std;
-class Persona{
+class Cliente : Persona{
 	// atributos
-	protected : string nombres,apellidos,direccion;
-				int telefono;
+	private : string nit;
 	// constructor
-	protected : 
-				Persona(){
+	public : 
+				Cliente(){
 				}
-				Persona(string nom,string ape,string dir,int tel){
-					nombres = nom;
-					apellidos = ape;
-					direccion = dir;
-					telefono = tel;
+				Cliente(string nom,string ape,string dir,int tel,string n) : Persona(nom,ape,dir,tel) {
+					nit = n;
 				}
-				void mostrar();
-				
+	//metodos
+	void mostrar(){
+		cout<<"______"<<endl;
+		cout<<nit<<","<<nombres<<","<<apellidos<<","<<direccion<<","<<telefono<<endl;
+	}
 };
